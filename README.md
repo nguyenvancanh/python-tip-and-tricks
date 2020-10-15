@@ -154,3 +154,71 @@ print("test" *4 )
 **7. Khai báo nhiều biến trên một dòng**
 
 Trong python, bạn có thể khai báo nhiều biến và gán giá trị cho chúng trên một dòng như sau
+
+```
+a,b,c = 10,20,30
+
+print(a,b,c)
+
+// Result: 10, 20, 30
+```
+
+Ngắn gọn hơn, bạn có thể viết thành
+
+```
+a,b,c = [10,20,30]
+
+print(a,b,c)
+```
+
+**8. Đổi chỗ các phần tử**
+
+Trong rất nhiều ngôn ngữ lập trình, nếu bạn muốn đổi chỗ 2 phần tử cho nhau, thì bạn cần phải khai báo thêm 1 biến tmp, thuật toán đơn giản để đổi chỗ x và y cho nhau như sau:
+
+```
+temp = x
+x = y
+y = temp
+```
+
+Trong python, việc này thu gọn lại chỉ bằng 1 dòng, bởi vì python cho phép gán mutiple giá trị cho mutiple biến chỉ bằng một câu lệnh
+
+```
+x = 5
+y = 10
+
+x, y = y, x
+
+print(x, y)
+
+//Result: 10, 5
+```
+
+**9. Create a Enum**
+
+Enum là một class trong python để tạo các danh sách liệt kê, là một tập hợp các tên tượng trưng được gắn với các giá trị không đổi và duy nhất. Để tạo 1 Enum bạn thao tác như sau:
+
+```
+class Person:
+A = 0
+B = 1
+C = 2
+
+print(Person.A)
+
+//Result: 0
+```
+
+Để truy cập vào member A, bạn chỉ cần gọi Person.A và kết quả trả về là 0. Ví dụ trên có thể viết được ngắn gọn hơn bởi việc dùng hàm range()
+
+```
+class Person:
+A, B, C = range(3)
+
+print(Person.A)
+
+//Result: 0
+```
+
+** 10. Enumerate **
+
