@@ -222,3 +222,38 @@ print(Person.A)
 
 ** 10. Enumerate **
 
+Thông thường khi làm việc với một danh sách, bạn thường muốn lấy ra cả index cũng như value của từng index đó. Hãy định nghĩa một danh sách dạng mảng
+
+```
+x = ['a', 'b', 'c']
+```
+
+Để lấy được index và value, thông thường chúng ta chỉ cần dùng lệnh for 
+
+```
+x = ['a', 'b', 'c']
+
+for i in range(len(x)):
+  print(i, x[i])
+  
+// Result:
+
+0 a
+1 b
+2 c
+```
+
+Sử dụng enumerate:
+
+Enumerate là một hàm tích hợp sẵn của python, cho phép chúng ta lặp qua một tệp với bộ đếm tự động. Về cơ bản nó ghép nối mọi phần tử trong danh sách của chúng ta với từng chỉ mục tương ứng. Hầu hết mọi người đều k biết về nó
+
+```
+x = ['a', 'b', 'c']
+
+for i,v in enumerate(x):
+  print(i, v)
+
+
+```
+
+Vô cùng đơn giản đúng k nào. Bài hôm nay mình viết tới đây, hẹn g
